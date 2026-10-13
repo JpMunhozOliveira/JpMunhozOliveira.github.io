@@ -1,9 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JP Munhoz Oliveira — Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+     <link rel="stylesheet" href="styles/styles.css">
+</head>
 
 <body>
-    <h1>Hello World</h1>
-    <p><a href="teste.html">teste</a></p>
+
+    <nav>
+        <div class="wrap">
+            <div class="brand">JP<span>.</span>DEV</div>
+            <ul>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="#cursos">cursos</a></li>
+                <li><a href="https://github.com/JpMunhozOliveira" target="_blank">github</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="wrap">
+            <div class="term">
+                <div class="term-bar">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="term-body">
+                    <div class="line"><span class="prompt">jp@portfolio</span>:~$ whoami</div>
+                    <div class="out" id="typed"></div>
+                </div>
+            </div>
+            <h1>JP Munhoz Oliveira</h1>
+            <p class="tag">Técnico em Informática, cursando Técnico em Logística — construindo pontes entre
+                desenvolvimento de sistemas e gestão de operações.</p>
+        </div>
+    </header>
+
+    <section id="stack">
+        <div class="wrap">
+            <div class="sec-label">// stack</div>
+            <h2>Ferramentas &amp; linguagens</h2>
+            <div class="stack-row">
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">C#</span>
+                <span class="chip">HTML / CSS</span>
+                <span class="chip">Godot</span>
+                <span class="chip">Unity</span>
+                <span class="chip">Docker</span>
+                <span class="chip">OpenCV / YOLO</span>
+                <span class="chip">Git</span>
+                <span class="chip">VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="wrap">
+            <div class="sec-label">// manifesto de carga</div>
+            <h2>Projetos</h2>
+            <div class="manifest">
+
+                <a class="m-row" href="#" target="_blank">
+                    <span class="m-code">01</span>
+                    <span>
+                        <span class="m-name">Detecção de Pessoas via Câmera</span>
+                        <div class="m-meta">Python · Docker · YOLO · OpenCV</div>
+                    </span>
+                    <span class="m-status st-done">concluído</span>
+                </a>
+
+                <a class="m-row" href="#">
+                    <span class="m-code">02</span>
+                    <span>
+                        <span class="m-name">Estoque-IA <em
+                                style="font-style:normal;color:var(--text-dim);">(TCC)</em></span>
+                        <div class="m-meta">Python · Docker · repositório privado</div>
+                    </span>
+                    <span class="m-status st-dev">em desenvolvimento</span>
+                </a>
+
+                <a class="m-row" href="#">
+                    <span class="m-code">03</span>
+                    <span>
+                        <span class="m-name">Bomberman — migração Unity → Godot</span>
+                        <div class="m-meta">Godot · repositório privado</div>
+                    </span>
+                    <span class="m-status st-dev">em desenvolvimento</span>
+                </a>
+
+                <a class="m-row" href="https://github.com/JpMunhozOliveira/Dark-Depths" target="_blank">
+                    <span class="m-code">04</span>
+                    <span>
+                        <span class="m-name">Dark Depths</span>
+                        <div class="m-meta">Unity · C#</div>
+                    </span>
+                    <span class="m-status st-done">concluído</span>
+                </a>
+
+                <a class="m-row" href="https://github.com/JpMunhozOliveira/Pong-Html5-Js" target="_blank">
+                    <span class="m-code">05</span>
+                    <span>
+                        <span class="m-name">Pong</span>
+                        <div class="m-meta">HTML5 · JavaScript</div>
+                    </span>
+                    <span class="m-status st-done">concluído</span>
+                </a>
+
+                <a class="m-row" href="https://github.com/JpMunhozOliveira/Snake-Html5-Js" target="_blank">
+                    <span class="m-code">06</span>
+                    <span>
+                        <span class="m-name">Snake</span>
+                        <div class="m-meta">HTML5 · JavaScript</div>
+                    </span>
+                    <span class="m-status st-done">concluído</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos">
+        <div class="wrap">
+            <div class="sec-label">// formação complementar</div>
+            <h2>Cursos</h2>
+            <div class="courses">
+                <div class="course">
+                    <span class="course-name">Responsive Web Design</span>
+                    <span class="course-org">freeCodeCamp</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">Software Quality Engineer</span>
+                    <span class="course-org">EBAC</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">10º Imersão Dev</span>
+                    <span class="course-org">Alura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <p class="mono">contato: <a class="gh" href="https://github.com/JpMunhozOliveira"
+                    target="_blank">github.com/JpMunhozOliveira</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const text = "desenvolvedor // integrando tecnologia e logística";
+        const el = document.getElementById('typed');
+        let i = 0;
+        function type() {
+            if (i <= text.length) {
+                el.textContent = text.slice(0, i);
+                i++;
+                setTimeout(type, 35);
+            }
+        }
+        type();
+    </script>
+
 </body>
 
 </html>
