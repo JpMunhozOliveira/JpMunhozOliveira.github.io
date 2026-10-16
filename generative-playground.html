@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Generative Playground: experimente arte generativa interativa com padrões matemáticos, simulações e sistemas visuais no navegador.">
+  <title>Generative Playground — JP Munhoz Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .detail-hero{padding:72px 0 48px;border-bottom:1px solid var(--border)}
+    .eyebrow{font:13px "IBM Plex Mono",monospace;color:var(--accent);margin-bottom:12px}
+    .detail-hero h1{font-size:clamp(30px,6vw,44px);margin-bottom:14px}
+    .lead{max-width:700px;color:var(--text-dim);font-size:17px}
+    .detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .detail-card{padding:20px;border:1px solid var(--border);border-radius:8px;background:var(--bg-elev)}
+    .detail-card h3{font-size:15px;margin-bottom:8px;color:var(--accent-2)}
+    .detail-card p{font-size:14px;color:var(--text-dim)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .action{display:inline-block;text-decoration:none;padding:10px 14px;border:1px solid var(--border);border-radius:5px;font:13px "IBM Plex Mono",monospace}
+    .action.primary{background:var(--accent);border-color:var(--accent);color:#0b0e14}
+    @media(max-width:600px){.detail-hero{padding:52px 0 36px}}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap"><a class="brand" href="index.html" style="text-decoration:none">JP<span>.</span>DEV</a><ul><li><a href="index.html#projetos">projetos</a></li><li><a href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">github</a></li></ul></div></nav>
+  <header class="detail-hero"><div class="wrap">
+    <div class="eyebrow">// arte generativa · aplicação interativa</div>
+    <h1>Generative Playground</h1>
+    <p class="lead">Um laboratório visual no navegador para explorar como matemática, regras simples e movimento podem gerar padrões complexos. Escolha um experimento, ajuste seus parâmetros e observe o resultado em tempo real.</p>
+    <div class="stack-row" style="margin-top:20px"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Canvas API</span><span class="chip">ES Modules</span></div>
+    <div class="actions"><a class="action primary" href="https://jpmunhozoliveira.github.io/Generative-Playground/" target="_blank" rel="noreferrer">abrir demonstração ↗</a><a class="action" href="https://github.com/JpMunhozOliveira/Generative-Playground" target="_blank" rel="noreferrer">ver repositório ↗</a><a class="action" href="index.html#projetos">← voltar ao portfólio</a></div>
+  </div></header>
+  <main>
+    <section><div class="wrap"><div class="sec-label">// visão geral</div><h2>Sobre o projeto</h2><p class="lead">O Generative Playground reúne experimentos de arte generativa em uma única interface. Em vez de produzir uma imagem estática, cada sistema executa regras e cálculos para criar animações e estruturas que podem mudar conforme os parâmetros escolhidos.</p></div></section>
+    <section><div class="wrap"><div class="sec-label">// experimentos</div><h2>Um laboratório de padrões</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Geometria e fractais</h3><p>Mandala, curvas de Lissajous, árvore fractal, conjuntos de Julia e Mandelbrot e curvas geradas por L-systems.</p></article>
+      <article class="detail-card"><h3>Sistemas dinâmicos</h3><p>Atratores caóticos, campos vetoriais e partículas em movimento para observar comportamentos emergentes.</p></article>
+      <article class="detail-card"><h3>Simulações e vida artificial</h3><p>Boids, Jogo da Vida, reação-difusão, crescimento DLA e agentes inspirados em Physarum.</p></article>
+      <article class="detail-card"><h3>Padrões espaciais</h3><p>Diagramas de Voronoi e texturas de ruído procedural gerados e atualizados no canvas.</p></article>
+    </div></div></section>
+    <section><div class="wrap"><div class="sec-label">// recursos</div><h2>Interação e experimentação</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Controles em tempo real</h3><p>Ajuste os parâmetros de cada experimento e veja as mudanças refletidas na visualização.</p></article>
+      <article class="detail-card"><h3>Randomização</h3><p>Explore novas combinações de parâmetros para descobrir resultados inesperados.</p></article>
+      <article class="detail-card"><h3>Configurações compartilháveis</h3><p>Os parâmetros podem ser representados na URL, permitindo compartilhar uma configuração específica.</p></article>
+      <article class="detail-card"><h3>Exportação de imagem</h3><p>Exporte o resultado atual em PNG e guarde composições que surgirem durante os experimentos.</p></article>
+    </div></div></section>
+    <section><div class="wrap"><div class="sec-label">// tecnologias</div><h2>Ferramentas utilizadas</h2><div class="detail-grid">
+      <article class="detail-card"><h3>HTML e CSS</h3><p>Estrutura da aplicação e interface para navegar pelos experimentos.</p></article>
+      <article class="detail-card"><h3>JavaScript</h3><p>Lógica dos sistemas generativos, controles e comportamento interativo.</p></article>
+      <article class="detail-card"><h3>Canvas API</h3><p>Renderização dos padrões e animações diretamente no navegador.</p></article>
+    </div><p style="margin-top:20px;color:var(--text-dim);font-size:14px">Projeto publicado e acessível no navegador, sem necessidade de instalação.</p></div></section>
+  </main>
+  <footer><div class="wrap"><p class="mono">JP Munhoz Oliveira · <a class="gh" href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">GitHub</a></p></div></footer>
+</body>
+</html>
