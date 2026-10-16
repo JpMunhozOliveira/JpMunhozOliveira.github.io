@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estoque-IA: projeto acadêmico que explora gestão de estoque, indicadores e apoio à tomada de decisão.">
+  <title>Estoque-IA — JP Munhoz Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .detail-hero{padding:72px 0 48px;border-bottom:1px solid var(--border)}
+    .eyebrow{font:13px "IBM Plex Mono",monospace;color:var(--accent);margin-bottom:12px}
+    .detail-hero h1{font-size:clamp(30px,6vw,44px);margin-bottom:14px}
+    .lead{max-width:680px;color:var(--text-dim);font-size:17px}
+    .detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .detail-card{padding:20px;border:1px solid var(--border);border-radius:8px;background:var(--bg-elev)}
+    .detail-card h3{font-size:15px;margin-bottom:8px;color:var(--accent-2)}
+    .detail-card p,.detail-card li{font-size:14px;color:var(--text-dim)}
+    .detail-card ul{padding-left:18px}
+    .notice{border-left:3px solid var(--accent);padding:14px 18px;background:var(--bg-elev);color:var(--text-dim);font-size:14px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .action{display:inline-block;text-decoration:none;padding:10px 14px;border:1px solid var(--border);border-radius:5px;font:13px "IBM Plex Mono",monospace}
+    .action.primary{background:var(--accent);border-color:var(--accent);color:#0b0e14}
+    @media(max-width:600px){.detail-hero{padding:52px 0 36px}}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap"><a class="brand" href="index.html" style="text-decoration:none">JP<span>.</span>DEV</a><ul><li><a href="index.html#projetos">projetos</a></li><li><a href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">github</a></li></ul></div></nav>
+  <header class="detail-hero"><div class="wrap">
+    <div class="eyebrow">// projeto acadêmico · TCC</div>
+    <h1>Estoque-IA</h1>
+    <p class="lead">Uma proposta de sistema para apoiar a gestão de estoque com indicadores operacionais e ferramentas de análise, aproximando tecnologia e logística.</p>
+    <div class="stack-row" style="margin-top:20px"><span class="chip">Python</span><span class="chip">Docker</span><span class="chip">Gestão de estoque</span><span class="chip">Análise de dados</span></div>
+    <div class="actions"><a class="action primary" href="index.html#projetos">← voltar ao portfólio</a><a class="action" href="https://github.com/JpMunhozOliveira/Estoque-IA" target="_blank" rel="noreferrer">repositório privado ↗</a></div>
+  </div></header>
+  <main>
+    <section><div class="wrap"><div class="sec-label">// visão geral</div><h2>Sobre o projeto</h2><p class="lead">O Estoque-IA é um projeto em desenvolvimento voltado à organização e análise de informações de estoque. A proposta é transformar dados operacionais em indicadores úteis para planejar reposições, compreender o comportamento dos itens e apoiar decisões de compra.</p></div></section>
+    <section><div class="wrap"><div class="sec-label">// áreas de estudo</div><h2>Conceitos explorados</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Classificação ABC</h3><p>Organização dos itens conforme sua relevância para ajudar a priorizar o acompanhamento e o controle.</p></article>
+      <article class="detail-card"><h3>Ponto de pedido</h3><p>Estimativa do momento em que um item deve ser reposto, considerando o consumo e o prazo de reposição.</p></article>
+      <article class="detail-card"><h3>Lote de compra</h3><p>Estudo de quantidades de reposição para apoiar decisões de compra mais consistentes.</p></article>
+      <article class="detail-card"><h3>Indicadores de estoque</h3><p>Análise de estoque mínimo, máximo e médio, além de custos relacionados à manutenção dos itens.</p></article>
+    </div></div></section>
+    <section><div class="wrap"><div class="sec-label">// implementação</div><h2>Tecnologias e desenvolvimento</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Python</h3><p>Base de desenvolvimento da aplicação e da lógica de análise.</p></article>
+      <article class="detail-card"><h3>Docker</h3><p>Ferramenta considerada para padronizar o ambiente de execução e facilitar a configuração.</p></article>
+    </div><p class="notice" style="margin-top:20px">O projeto está em desenvolvimento. Esta página apresenta sua proposta e os conceitos trabalhados, sem expor o código-fonte ou dados internos do repositório privado.</p></div></section>
+  </main>
+  <footer><div class="wrap"><p class="mono">JP Munhoz Oliveira · <a class="gh" href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">GitHub</a></p></div></footer>
+</body>
+</html>
