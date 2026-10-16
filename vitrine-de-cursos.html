@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vitrine de Cursos: projeto em desenvolvimento para apresentar e organizar cursos em uma experiência web.">
+  <title>Vitrine de Cursos — JP Munhoz Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .detail-hero{padding:72px 0 48px;border-bottom:1px solid var(--border)}
+    .eyebrow{font:13px "IBM Plex Mono",monospace;color:var(--accent);margin-bottom:12px}
+    .detail-hero h1{font-size:clamp(30px,6vw,44px);margin-bottom:14px}
+    .lead{max-width:680px;color:var(--text-dim);font-size:17px}
+    .detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .detail-card{padding:20px;border:1px solid var(--border);border-radius:8px;background:var(--bg-elev)}
+    .detail-card h3{font-size:15px;margin-bottom:8px;color:var(--accent-2)}
+    .detail-card p{font-size:14px;color:var(--text-dim)}
+    .notice{border-left:3px solid var(--accent);padding:14px 18px;background:var(--bg-elev);color:var(--text-dim);font-size:14px}
+    .action{display:inline-block;text-decoration:none;padding:10px 14px;border:1px solid var(--border);border-radius:5px;font:13px "IBM Plex Mono",monospace;margin-top:24px}
+    .action.primary{background:var(--accent);border-color:var(--accent);color:#0b0e14}
+    @media(max-width:600px){.detail-hero{padding:52px 0 36px}}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap"><a class="brand" href="index.html" style="text-decoration:none">JP<span>.</span>DEV</a><ul><li><a href="index.html#projetos">projetos</a></li><li><a href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">github</a></li></ul></div></nav>
+  <header class="detail-hero"><div class="wrap">
+    <div class="eyebrow">// projeto em desenvolvimento</div>
+    <h1>Vitrine de Cursos</h1>
+    <p class="lead">Uma aplicação web pensada para apresentar e organizar cursos de forma clara, tornando a descoberta de conteúdos de aprendizagem mais simples.</p>
+    <div class="stack-row" style="margin-top:20px"><span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">Aplicação web</span></div>
+    <a class="action primary" href="index.html#projetos">← voltar ao portfólio</a>
+  </div></header>
+  <main>
+    <section><div class="wrap"><div class="sec-label">// visão geral</div><h2>Sobre o projeto</h2><p class="lead">O Vitrine de Cursos é um projeto em desenvolvimento com foco na apresentação de cursos em uma interface organizada. A página pública descreve a proposta do sistema sem depender de acesso ao repositório de código.</p></div></section>
+    <section><div class="wrap"><div class="sec-label">// objetivos</div><h2>Foco do projeto</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Apresentação clara</h3><p>Estruturar informações dos cursos para que sejam fáceis de consultar e comparar.</p></article>
+      <article class="detail-card"><h3>Organização de dados</h3><p>Modelar e armazenar informações necessárias à aplicação de forma consistente.</p></article>
+      <article class="detail-card"><h3>Experiência web</h3><p>Desenvolver uma interface acessível e organizada para explorar o catálogo de cursos.</p></article>
+    </div><p class="notice" style="margin-top:20px">Esta apresentação descreve o objetivo geral do projeto. Funcionalidades específicas serão adicionadas à medida que forem confirmadas e implementadas.</p></div></section>
+  </main>
+  <footer><div class="wrap"><p class="mono">JP Munhoz Oliveira · <a class="gh" href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">GitHub</a></p></div></footer>
+</body>
+</html>
