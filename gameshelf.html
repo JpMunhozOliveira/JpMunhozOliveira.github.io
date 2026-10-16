@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GameShelf é uma aplicação web para explorar um catálogo de jogos, consultar detalhes, gêneros, plataformas, avaliações e imagens.">
+  <title>GameShelf — JP Munhoz Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .detail-hero{padding:72px 0 48px;border-bottom:1px solid var(--border)}
+    .eyebrow{font:13px "IBM Plex Mono",monospace;color:var(--accent);margin-bottom:12px}
+    .detail-hero h1{font-size:clamp(30px,6vw,44px);margin-bottom:14px}
+    .lead{max-width:700px;color:var(--text-dim);font-size:17px}
+    .detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .detail-card{padding:20px;border:1px solid var(--border);border-radius:8px;background:var(--bg-elev)}
+    .detail-card h3{font-size:15px;margin-bottom:8px;color:var(--accent-2)}
+    .detail-card p{font-size:14px;color:var(--text-dim)}
+    .notice{border-left:3px solid var(--accent);padding:14px 18px;background:var(--bg-elev);color:var(--text-dim);font-size:14px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .action{display:inline-block;text-decoration:none;padding:10px 14px;border:1px solid var(--border);border-radius:5px;font:13px "IBM Plex Mono",monospace}
+    .action.primary{background:var(--accent);border-color:var(--accent);color:#0b0e14}
+    @media(max-width:600px){.detail-hero{padding:52px 0 36px}}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap"><a class="brand" href="index.html" style="text-decoration:none">JP<span>.</span>DEV</a><ul><li><a href="index.html#projetos">projetos</a></li><li><a href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">github</a></li></ul></div></nav>
+  <header class="detail-hero"><div class="wrap">
+    <div class="eyebrow">// aplicação web · projeto em desenvolvimento</div>
+    <h1>GameShelf</h1>
+    <p class="lead">Uma aplicação web para descobrir jogos, explorar um catálogo e consultar informações úteis antes de escolher a próxima aventura, com foco em uma experiência visual organizada.</p>
+    <div class="stack-row" style="margin-top:20px"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span><span class="chip">API RAWG</span></div>
+    <div class="actions"><a class="action primary" href="index.html#projetos">← voltar ao portfólio</a><span class="action">código-fonte privado</span></div>
+  </div></header>
+  <main>
+    <section><div class="wrap"><div class="sec-label">// visão geral</div><h2>Sobre o projeto</h2><p class="lead">O GameShelf organiza uma experiência de descoberta de jogos em páginas de apresentação, catálogo e detalhes. A integração com uma API de dados de jogos permite exibir informações como gêneros, plataformas, datas de lançamento, avaliações e imagens, conforme a disponibilidade dos dados externos.</p></div></section>
+    <section><div class="wrap"><div class="sec-label">// experiência</div><h2>Principais áreas</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Catálogo de jogos</h3><p>Uma área para navegar por títulos e descobrir opções além dos jogos já conhecidos.</p></article>
+      <article class="detail-card"><h3>Páginas de detalhes</h3><p>Consulta de informações do jogo, como descrição, gêneros, plataformas, lançamento e avaliação.</p></article>
+      <article class="detail-card"><h3>Conteúdo visual</h3><p>Artes e capturas de tela ajudam a apresentar o estilo e o universo de cada título.</p></article>
+      <article class="detail-card"><h3>Interface responsiva</h3><p>Estrutura visual construída para organizar o conteúdo e facilitar a navegação em diferentes telas.</p></article>
+    </div></div></section>
+    <section><div class="wrap"><div class="sec-label">// tecnologias</div><h2>Ferramentas utilizadas</h2><div class="detail-grid">
+      <article class="detail-card"><h3>HTML e CSS</h3><p>Estrutura das páginas, identidade visual e componentes da interface.</p></article>
+      <article class="detail-card"><h3>JavaScript</h3><p>Comportamentos da interface, carregamento de conteúdo e integração com a API.</p></article>
+      <article class="detail-card"><h3>Bootstrap</h3><p>Base de componentes e recursos de layout para a aplicação web.</p></article>
+    </div><p class="notice" style="margin-top:20px">O projeto e seu código-fonte serão mantidos privados. Esta página pública apresenta somente a proposta e as tecnologias em nível geral, sem expor chaves de API ou detalhes internos.</p></div></section>
+  </main>
+  <footer><div class="wrap"><p class="mono">JP Munhoz Oliveira · <a class="gh" href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">GitHub</a></p></div></footer>
+</body>
+</html>
