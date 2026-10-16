@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sistema de monitoramento inteligente com visão computacional para detectar pessoas em zonas de interesse e emitir alertas em câmeras compatíveis.">
+  <title>Monitoramento Inteligente — JP Munhoz Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .detail-hero{padding:72px 0 48px;border-bottom:1px solid var(--border)}
+    .eyebrow{font:13px "IBM Plex Mono",monospace;color:var(--accent);margin-bottom:12px}
+    .detail-hero h1{font-size:clamp(30px,6vw,44px);margin-bottom:14px}
+    .lead{max-width:700px;color:var(--text-dim);font-size:17px}
+    .detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .detail-card{padding:20px;border:1px solid var(--border);border-radius:8px;background:var(--bg-elev)}
+    .detail-card h3{font-size:15px;margin-bottom:8px;color:var(--accent-2)}
+    .detail-card p{font-size:14px;color:var(--text-dim)}
+    .notice{border-left:3px solid var(--accent);padding:14px 18px;background:var(--bg-elev);color:var(--text-dim);font-size:14px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .action{display:inline-block;text-decoration:none;padding:10px 14px;border:1px solid var(--border);border-radius:5px;font:13px "IBM Plex Mono",monospace}
+    .action.primary{background:var(--accent);border-color:var(--accent);color:#0b0e14}
+    @media(max-width:600px){.detail-hero{padding:52px 0 36px}}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap"><a class="brand" href="index.html" style="text-decoration:none">JP<span>.</span>DEV</a><ul><li><a href="index.html#projetos">projetos</a></li><li><a href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">github</a></li></ul></div></nav>
+  <header class="detail-hero"><div class="wrap">
+    <div class="eyebrow">// visão computacional · projeto em desenvolvimento</div>
+    <h1>Sistema de Monitoramento Inteligente</h1>
+    <p class="lead">Projeto de monitoramento por câmeras IP que combina visão computacional e detecção de pessoas para identificar presença em zonas de interesse e acionar alertas sonoros em dispositivos compatíveis.</p>
+    <div class="stack-row" style="margin-top:20px"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">YOLO</span><span class="chip">FFmpeg</span><span class="chip">Docker</span><span class="chip">RTSP</span></div>
+    <div class="actions"><a class="action primary" href="index.html#projetos">← voltar ao portfólio</a><span class="action">código-fonte privado</span></div>
+  </div></header>
+  <main>
+    <section><div class="wrap"><div class="sec-label">// visão geral</div><h2>Sobre o projeto</h2><p class="lead">O sistema recebe fluxos de vídeo de câmeras IP, analisa os quadros capturados e usa um modelo de detecção para verificar a presença de pessoas em regiões configuradas. Quando as condições definidas são atendidas, a aplicação pode emitir mensagens de áudio por meio da rede local para câmeras compatíveis.</p></div></section>
+    <section><div class="wrap"><div class="sec-label">// componentes principais</div><h2>O que está sendo desenvolvido</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Detecção de pessoas</h3><p>Uso de YOLO para reconhecer pessoas nos quadros de vídeo, com processamento de imagens apoiado pelo OpenCV.</p></article>
+      <article class="detail-card"><h3>Zonas de interesse</h3><p>Configuração de regiões específicas da imagem para definir em quais áreas a presença deve gerar uma ação.</p></article>
+      <article class="detail-card"><h3>Captura resiliente</h3><p>Separação da captura e do processamento, com mecanismos de reconexão para lidar com interrupções no fluxo de vídeo.</p></article>
+      <article class="detail-card"><h3>Alertas sonoros</h3><p>Preparação de mensagens de áudio e comunicação local com modelos de câmeras compatíveis.</p></article>
+    </div></div></section>
+    <section><div class="wrap"><div class="sec-label">// tecnologias</div><h2>Ferramentas utilizadas</h2><div class="detail-grid">
+      <article class="detail-card"><h3>Python · OpenCV · YOLO</h3><p>Composição da lógica de aplicação, captura de vídeo e inferência para detecção de pessoas.</p></article>
+      <article class="detail-card"><h3>RTSP · TCP · FFmpeg</h3><p>Peças da integração com os fluxos de vídeo e do preparo e envio de áudio no ambiente compatível.</p></article>
+      <article class="detail-card"><h3>Docker</h3><p>Suporte à execução em um ambiente conteinerizado e mais consistente.</p></article>
+    </div><p class="notice" style="margin-top:20px">O projeto continua em desenvolvimento, com foco em estabilidade, redução da latência dos alertas e testes prolongados com múltiplas câmeras. Esta página resume o objetivo e as tecnologias, sem publicar código, credenciais ou detalhes internos de configuração.</p></div></section>
+  </main>
+  <footer><div class="wrap"><p class="mono">JP Munhoz Oliveira · <a class="gh" href="https://github.com/JpMunhozOliveira" target="_blank" rel="noreferrer">GitHub</a></p></div></footer>
+</body>
+</html>
